@@ -7,7 +7,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  storage :aliyun
+  storage Settings.which_storage
   
   process :time_start
   # storage :fog
